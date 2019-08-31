@@ -1,0 +1,23 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home Page Optometrist</title>
+</head>
+<body>
+  <h1>Home Page Optometrist</h1>
+    <h2>Course Project for ECE 364 (Software Engineering Tool lab) - Fall 2018 </h2>
+        <h3>Description:</h3>
+            <p>The final version of this webpage will put glasses on any profile photo found in another person homepage entered in the box below. For more information, refer to <a href = "https://docs.google.com/document/d/1i6UfQLefK5CmvCWdfUiZVcEX0GqxaoZRyEUMvxfF6Ts/edit">here </a> </p>
+        <h3> Current status (11/20/2018)</h3>
+            <p>Milestone 1 - From the given url, display the website as is (20/11/2018)</p>
+  <br>
+  <br>
+    <h2>Insctruction:</h2>
+            <p>Enter URL below <br> Do not use social media url</p>
+  <form method = "GET" action = "{{ url_for('view_page') }}">
+      <input type="text" name="url" size="40" value="">
+      <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
